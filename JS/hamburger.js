@@ -11,9 +11,9 @@ function show() {
   left_block.style.display = 'none';
   center_block.style = 'border: 0px; opacity: 0.5';
   right_block.style = 'opacity: 0.5';
-  main_container.style = 'background-color: rgba(188, 229, 249, 0.6); background-image: url(../Images/backImageOpp.jpg);';
+  main_container.style = 'background-color: rgba(188, 229, 249, 0.6); background-image: url(https://sailforever.github.io/TestTask_DigitalChief/Images/backImageOpp.jpg);';
   if (widthMon <= 820) {
-    main_container.style = 'background-image: url(../Images/backgroundMobOpp.png);'
+    main_container.style = 'background-image: url(https://sailforever.github.io/TestTask_DigitalChief/Images/backgroundMobOpp.png);'
   }
 }
 function closeSvg() {
