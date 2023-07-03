@@ -13,7 +13,7 @@ function show() {
   right_block.style = 'opacity: 0.5';
   main_container.style = 'background-color: rgba(188, 229, 249, 0.6); background-image: url(../Images/backImageOpp.jpg);';
   if (widthMon <= 820) {
-    main_container.style = 'background-image: url(../Images/BackgroundMobOpp.png);'
+    main_container.style = 'background-image: url(../Images/backgroundMobOpp.png);'
   }
 }
 function closeSvg() {
