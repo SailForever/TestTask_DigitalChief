@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
   <meta name="description" content="Author: A. Ermolovich">
   <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+  <script src='JS/jquery_3.7.0.min.js'></script>
   <title>Web-developer</title>
 </head>
 
@@ -19,6 +20,32 @@
           <a class="left_block_up_git" href="https://github.com/" target="_blank" title="GitHub"></a>
           <a class="left_block_up_inst" href="https://www.instagram.com/" target="_blank" title="Instagram"></a>
           <a class="left_block_up_faceb" href="https://ru-ru.facebook.com/" target="_blank" title="Facebook"></a>
+        </div>
+        <div class="hamburger" id=hamburger>
+          <div class="svgHamb_close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" onclick="closeSvg()">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="SVG/Close.svg#close"></use>
+            </svg>
+          </div>
+          <div class="hamburger_block">
+            <span class="circle_hm"></span><a class="hamburger_text1" href="#" target="_blank" title="Про меня">ПРО
+              МЕНЯ</a>
+            <span class="circle_hm"></span><a class="hamburger_text2" href="#" target="_blank" title="МОЙ ОПЫТ">МОЙ
+              ОПЫТ</a>
+            <span class="circle_hm"></span><a class="hamburger_text3" href="#" target="_blank" title="МОИ НАВЫКИ">МОИ
+              НАВЫКИ</a>
+            <span class="circle_hm"></span><a class="hamburger_text4" href="#" target="_blank" title="МОИ РАБОТЫ">МОИ
+              РАБОТЫ</a>
+            <span class="circle_hm"></span><a class="hamburger_text5" href="#" target="_blank"
+              title="ПРАЙС-ЛИСТ">ПРАЙС-ЛИСТ</a>
+            <span class="circle_hm"></span><a class="hamburger_text6" href="#" target="_blank"
+              title="КОНТАКТЫ">КОНТАКТЫ</a>
+          </div>
+          <div class="svgAll_hm">
+            <a class="svg1_hm" href="https://github.com/" target="_blank" title="GitHub"></a>
+            <a class="svg2_hm" href="https://www.instagram.com/" target="_blank" title="Instagram"></a>
+            <a class="svg3_hm" href="https://ru-ru.facebook.com/" target="_blank" title="Facebook"></a>
+          </div>
         </div>
       </div>
       <div class="center_block_up">
@@ -34,7 +61,7 @@
       </div>
       <div class="right_block_up">
         <div class="svgHamb_up">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" onclick="show()">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="SVG/Hamburger.svg#hamburger"></use>
           </svg>
         </div>
@@ -164,22 +191,24 @@
           <div class="up_block_form">
             <div class="first_name_form">
               <label class="label1_form">Ваше имя</label>
-              <input class="inp1_form" type=text name=firstName>
+              <input class="inp1_form" type=text name=firstName><b id=NameFail></b>
             </div>
             <div class="E-mail_form">
               <label class="label2_form">Ваша почта</label>
-              <input class="inp2_form" type=email name=email>
+              <input class="inp2_form" type=email name=email><b id=EmailFail></b>
             </div>
           </div>
           <div class="down_block_form">
             <label class="label3_form">Ваше сообщение</label>
-            <textarea class="textarea_form" name=bigText></textarea>
+            <textarea class="textarea_form" name=bigText></textarea><b id=TextareaFail></b>
             <input class="submit_form" type=submit name=done value='Отправить сообщение'>
           </div>
         </form>
       </div>
     </div>
   </div>
+  <script src='JS/validate.js'></script>
+  <script src='JS/hamburger.js'></script>
 </body>
 
 </html>
